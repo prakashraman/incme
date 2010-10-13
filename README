@@ -14,7 +14,7 @@ HOW IT WORKS
 ============
 All the pages are parsed through for the [[inc: <include_file_name>]] tag and that tag is replaced with the contents of the include_file. Thats it !
 
-include_file: the include file needs to be available at found in <source-dir>/_includes/<include_file_name>
+include_file: the include file needs to be available at <source-dir>/_includes/<include_file_name>
 
 Note: currently js, exe, gif, png, jpeg files are not parsed
 
