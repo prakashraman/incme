@@ -32,7 +32,7 @@ _includes_ : This folder must contain all the include_files that can be accessed
 ### EXAMPLE
 
 <code>
-source 
+    source 
     |- _includes_
        |- header
        \- footer
@@ -40,41 +40,47 @@ source
     \- logo.png
 </code>
 
-header: (include)
------------------
-<html>
-<head>
- <title>Simple Site Maker</title>
-<head>
-<body>
+##### header: (include)
+<code>
+    <html>
+    <head>
+     <title>Simple Site Maker</title>
+    <head>
+    <body>
+</code>
 
-footer: (include)
------------------
-</body>
-</html>
+##### footer: (include)
+<code>
+    </body>
+    </html>
+</code>
 
-index.html
-----------
-[[inc: header]]
-<img src="logo.png">
-Hello World
-[[inc: footer]]
+##### index.html
+<code>
+    [[inc: header]]
+    <img src="logo.png">
+    Hello World
+    [[inc: footer]]
+</code>
 
-ruby simple-site-maker.rb --source-dir=source --dest-dir=gen
+##### Run the below command 
+<code>
+    ruby simple-site-maker.rb --source-dir=source --dest-dir=gen
+    
+    #"gen" folder is created with "index.html" in it
+</code>
 
-"gen" folder is created with "index.html" in it
-
-generated index.html
----------------------
-<html>
-<head>
- <title>Simple Site Maker</title>
-<head>
-<body>
-<img src="logo.png">
-Hello World
-</body>
-</html>
-
+##### generated index.html
+<code>
+    <html>
+    <head>
+     <title>Simple Site Maker</title>
+    <head>
+    <body>
+    <img src="logo.png">
+    Hello World
+    </body>
+    </html>
+</code>
 
 Thats it !
