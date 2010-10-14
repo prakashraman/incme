@@ -54,7 +54,7 @@ Note: currently js, exe, gif, png, jpeg files are not parsed
     </html>
 
 
-##### contents index.html
+##### contents of index.html
 
     [[inc: header]]
     <img src="logo.png">
