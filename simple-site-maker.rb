@@ -30,6 +30,8 @@ if (not $options[:source_dir] or (not $options[:dest_dir]))
   exit
 end
 
+
+# CONTANTS
 SOURCE_DIR = remove_trailing_slash($options[:source_dir])
 DEST_DIR = remove_trailing_slash($options[:dest_dir])
 EXCLUDE_EXTS = ["js", "gif", "jpeg", "jpg", "png"]
@@ -53,6 +55,8 @@ if SOURCE_DIR == DEST_DIR
   puts "Exiting..."
 end
 
+
+# THE MAKER CLASS
 class Maker
   
   # RETURNS THE LIST OF FILES TO BE OPERATED ON
@@ -87,7 +91,8 @@ class Maker
   end
 
 
-  # PERFORMS THE TEXT SUBSTITUTION ON THE FILE
+  # INTERNAL FUNCTION: NOT TO BE CALLED FROM OUTSITE
+  # PERFORMS THE TEXT SUBSTITUTION ON THE PASSED TEXT
   def _perform(text)
     lines = text.split("\n")
     lines.map! {|line|
