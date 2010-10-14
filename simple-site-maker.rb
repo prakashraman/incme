@@ -1,5 +1,5 @@
 require 'find'
-require 'FileUtils'
+require 'fileutils.rb'
 
 $options = {}
 ARGV.each do |arg|
