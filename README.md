@@ -26,7 +26,7 @@ Note: currently js, exe, gif, png, jpeg files are not parsed
     \- <remaining files>
 
 
-_includes_ : This folder must contain all the include_files that can be accessed via [[inc: <include_file_name>]]
+\_includes\_ : This folder must contain all the include_files that can be accessed via [[inc: <include_file_name>]]. This is the only mandatory folder
 
 ### EXAMPLE
 
@@ -64,7 +64,7 @@ _includes_ : This folder must contain all the include_files that can be accessed
 
 #### Run the below command 
 
-    ruby simple-site-maker.rb --source-dir=source --dest-dir=gen
+    $ ruby simple-site-maker.rb --source-dir=source --dest-dir=gen
     
     #"gen" folder is created with "index.html" in it
 
