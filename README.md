@@ -69,7 +69,7 @@ Note: currently js, exe, gif, png, jpeg files are not parsed
     #"gen" folder is created with "index.html" in it
 
 
-##### contents of the generated index.html
+##### contents of the generated gen/index.html
 
     <html>
     <head>
