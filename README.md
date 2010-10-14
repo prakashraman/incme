@@ -1,4 +1,4 @@
-# SIMPLE SITE MAKER
+# INCME
 
 INCME (Include Me) is a tool that eliminates the repetition of code when you have to create static HTML pages.
 
