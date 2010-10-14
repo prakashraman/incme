@@ -39,7 +39,7 @@ _includes_ : This folder must contain all the include_files that can be accessed
     \- logo.png
 
 
-##### header: (include)
+##### contents of header: (include)
 
     <html>
     <head>
@@ -48,13 +48,13 @@ _includes_ : This folder must contain all the include_files that can be accessed
     <body>
 
 
-##### footer: (include)
+##### contents of footer: (include)
 
     </body>
     </html>
 
 
-##### index.html
+##### contents index.html
 
     [[inc: header]]
     <img src="logo.png">
@@ -69,7 +69,7 @@ _includes_ : This folder must contain all the include_files that can be accessed
     #"gen" folder is created with "index.html" in it
 
 
-##### generated index.html
+##### contents of the generated index.html
 
     <html>
     <head>
@@ -83,3 +83,4 @@ _includes_ : This folder must contain all the include_files that can be accessed
 
 
 Thats it !
+----
