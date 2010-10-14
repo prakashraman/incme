@@ -26,7 +26,7 @@ Note: currently js, exe, gif, png, jpeg files are not parsed
     \- <remaining files>
 
 
-\_includes\_ : This folder must contain all the include_files that can be accessed via [[inc: <include_file_name>]]. This is the only mandatory folder
+*\_includes\_ : This folder must contain all the include_files that can be accessed via [[inc: <include_file_name>]]. This is the only mandatory folder*
 
 ### EXAMPLE
 

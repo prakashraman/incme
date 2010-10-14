@@ -48,6 +48,11 @@ if NOT_ALLOWED_DIRS.include?(DEST_DIR.strip.downcase)
   exit
 end
 
+if SOURCE_DIR == DEST_DIR
+  puts "The --source-dir cannot be the same as the --dest-dir"
+  puts "Exiting..."
+end
+
 class Maker
   
   # RETURNS THE LIST OF FILES TO BE OPERATED ON
@@ -101,8 +106,8 @@ class Maker
     open(to, 'w'){|f| f << text}
   end
   
-  # RETURN TRUE IF THIS FILE SHOULD BE EXCLUDED FORM THE "PERFORM" COMMAND.
-  # THIS FILE DIRECTLY BE COPIED OVER TO THE DESTINATION FOLDER
+  # RETURNS TRUE IF THIS FILE SHOULD BE EXCLUDED FORM THE "PERFORM" COMMAND.
+  # THIS FILE IS DIRECTLY BE COPIED OVER TO THE DESTINATION FOLDER
   def exclude_file?(path)
     EXCLUDE_EXTS.include?(File.extname(path).sub(".", "").downcase)
   end
