@@ -1,6 +1,6 @@
 # SIMPLE SITE MAKER
 
-Simple Site Maker is a tool that eliminates the repetition of code when you have to create static HTML pages.
+INCME (Include Me) is a tool that eliminates the repetition of code when you have to create static HTML pages.
 
 ### USAGE
 
