@@ -90,7 +90,6 @@ class Maker
     ""
   end
 
-
   # INTERNAL FUNCTION: NOT TO BE CALLED FROM OUTSITE
   # PERFORMS THE TEXT SUBSTITUTION ON THE PASSED TEXT
   def _perform(text)
