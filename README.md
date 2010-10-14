@@ -39,7 +39,7 @@ _includes_ : This folder must contain all the include_files that can be accessed
     \- logo.png
 
 
-##### contents of header: (include)
+##### contents of header: (include file)
 
     <html>
     <head>
@@ -48,7 +48,7 @@ _includes_ : This folder must contain all the include_files that can be accessed
     <body>
 
 
-##### contents of footer: (include)
+##### contents of footer: (include file)
 
     </body>
     </html>
@@ -62,7 +62,7 @@ _includes_ : This folder must contain all the include_files that can be accessed
     [[inc: footer]]
 
 
-##### Run the below command 
+#### Run the below command 
 
     ruby simple-site-maker.rb --source-dir=source --dest-dir=gen
     
