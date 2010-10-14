@@ -7,8 +7,8 @@ Simple Site Maker is a tool that eliminates the repetition of code when you have
 <code>
     $ ruby simple-site-maker.rb --source-dir=<path-to-source-dir> --dest-dir=<path-to-dest-dir>
     
-    *source-dir : The directory that contains the html pages and the include pages*
-    *dest-dir: The directory to be created with the generated pages*
+    source-dir : The directory that contains the html pages and the include pages
+    dest-dir: The directory to be created with the generated pages
 </code>
 
 ### HOW IT WORKS
@@ -21,20 +21,24 @@ Note: currently js, exe, gif, png, jpeg files are not parsed
 
 ### SOURCE FOLDER STRUCTURE
 
-|- _includes_
-|- <remaining files>
-\- <remaining files>
+<code>
+    |- _includes_
+    |- <remaining files>
+    \- <remaining files>
+</code>
 
 _includes_ : This folder must contain all the include_files that can be accessed via [[inc: <include_file_name>]]
 
 ### EXAMPLE
 
+<code>
 source 
-|- _includes_
-   |- header
-   \- footer
-|- index.html
-\- logo.png
+    |- _includes_
+       |- header
+       \- footer
+    |- index.html
+    \- logo.png
+</code>
 
 header: (include)
 -----------------
